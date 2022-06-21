@@ -6,19 +6,18 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { SelectorComponent } from './components/selector/selector.component';
 import { OrganizerComponent } from './components/organizer/organizer.component';
+import { MomentPipe } from './shared/moment.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
     SelectorComponent,
-    OrganizerComponent
+    OrganizerComponent,
+    MomentPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
